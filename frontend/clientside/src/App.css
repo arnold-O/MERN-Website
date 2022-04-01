@@ -1,0 +1,23 @@
+#Home{
+  background: rgb(0, 101, 219);
+  background: linear-gradient(90deg, rgb(0, 101, 219) 50%, rgb(0, 212, 255) 100%);
+  height: 100vh;
+}
+
+.services-height{
+  height:250px
+}
+
+
+#footer{
+  background: rgb(0, 101, 219);
+  background: linear-gradient(90deg, rgb(0, 101, 219) 50%, rgb(0, 212, 255) 100%);
+  
+
+}
+.form{
+  background: rgb(0, 101, 219);
+  background: linear-gradient(90deg, rgb(0, 101, 219) 50%, rgb(0, 212, 255) 100%);
+  
+
+}
