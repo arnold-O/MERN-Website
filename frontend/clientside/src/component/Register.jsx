@@ -56,9 +56,13 @@ const handleSubmit = async(e) =>{
     password:user.password
   }
   if(newUser){
-    await axios.post(link, newUser);
+   let res = await axios.post(link, newUser);
+   if(res.data.status ===201){
+     alert('user registered')
+   }else{
+     alert('wrong input fields')
+   }
   }
-
 
 }
 
@@ -68,7 +72,7 @@ const handleSubmit = async(e) =>{
     <div>
       <div className="container shadow my-5">
         <div className="row ">
-          <div className="col-md-5 form d-flex p-5 flex-column align-items-center  justify-content-center">
+          <div className="col-md-5  form d-flex p-5 flex-column order-2 align-items-center order-2   justify-content-center">
             <h1 className="text-white">Welcome Back</h1>
             <p className='fw-25 text-white'>Let Get You Registered</p>
             <h5 className="mb-4 text-white">OR</h5>
